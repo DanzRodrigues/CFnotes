@@ -1,0 +1,135 @@
+/*
+
+    Author: Daniel Rodrigues
+
+*/
+
+.bg {
+    /*background-color: darkslateblue;*/
+    background-image: linear-gradient(darkslateblue, cornflowerblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.login-form {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: static;
+    text-align: center;
+    width: 40vw;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+.input {
+    background-color: whitesmoke;
+    width: 40%;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #999;
+    margin: 5px 5px 5px 5px;
+    padding: 4px 4px 4px 4px;
+    color: #555;
+    transition: .5s;
+}
+
+.input:focus {
+    border-color: lightgreen;
+}
+
+.titulo {
+    font-size: 25px;
+    font-family: tahoma;
+    color: #555;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.texto {
+    padding-bottom: 30px;
+    font-size: 12px;
+    font-family: tahoma;
+    color: #555;
+}
+
+.button {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    width: 30%;
+    padding: 7px 0px 7px 0px;
+    border-style: none;
+    background-color: royalblue;
+    transition: .2s;    
+    color: white;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: indianred;
+}
+
+#btn_cadastrar {
+    text-decoration: underline;
+}
+
+/*
+ * Cadastrar
+*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1;  /*Sit on top; */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-right: 410px;
+    padding-left: 410px;
+    transition: .3s;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastrar-form {
+    display: flex;
+    background-color: whitesmoke;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 90%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
